@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+  <div ng-app="mapsApp" ng-controller="MapCtrl">
+
+    <nav class="navbar" style="background-color: black;">
+        <a class="navbar-brand"  ng-click="myFunction()" href="#" >change 10%</a>
+    </nav>
+    <div id="map"></div>
+    <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+         <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+    </div>
+
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB4N_DjiV0QF0bgcjFGvd9Rr1mNL1JlL1Q&extension=.js"></script>
+
+<script src="Angular.js"></script>
+</body>
+</html>
