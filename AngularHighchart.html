@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Highcharts directive demo </title>
+    <script type="text/javascript" src="https://code.angularjs.org/1.1.0/angular.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://rawgit.com/pablojim/highcharts-ng/master/dist/highcharts-ng.js"></script>
+</head>
+<body>
+
+  <div ng-app="myapp">
+      <div ng-controller="myctrl">
+          <button ng-click="addPoints()">refresh 10%</button>
+          <highchart config="highchartsNG"></highchart>
+      </div>
+  </div>
+<script src="AngularHighchart.js"></script>
+</body>
+</html>
