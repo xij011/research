@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>new Angular google</title>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB4N_DjiV0QF0bgcjFGvd9Rr1mNL1JlL1Q&extension=.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+    <style> .angular-google-map-container { height: 400px; } </style>
+    <script src="./lodish.js"></script>
+    <script src="./angular-google-maps.js"></script>
+    <script src="./angular-simple-logger.js"></script>
+  </head>
+  <body>
+
+      <div ng-app="myapp">
+        <div ng-controller="myctrl">
+          <button ng-click="addPoints()">refresh 10%</button>
+          <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+            <ui-gmap-markers models="randomMarkers" coords="'self'" icon="'icon'">
+            </ui-gmap-markers>
+         </ui-gmap-google-map>
+        </div>
+      </div>
+
+
+
+    <script src="./NewAngularGoogle.js"></script>
+
+
+  </body>
+</html>
